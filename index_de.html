@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WOLQE Energy</title>
   <link rel="stylesheet" href="style.css">
+  <script src="languageswitch.js"></script>
 </head>
 <body>
 
@@ -12,15 +14,21 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <a href="#" class="navbar-logo">
-      <img src="logo.svg" alt="Logo" href="#home">
-    </a>
+    <a><img src="/Assets/Brand.png" alt="Brand-Logo"></a>
     <div class="navbar-menu">
       <a href="#Einführung" class="navbar-item">Einführung</a>
       <a href="#Lösung" class="navbar-item">WOLQE's Solution</a>
       <a href="#Paket A" class="navbar-item">Paket A</a>
       <a href="#Paket B" class="navbar-item">Paket B</a>
       <a href="#Warum" class="navbar-item">Warum wir?</a>
+      <div class="navbar-dropdown">
+        <button class="dropbtn">Sprache</button>
+        <div class="dropdown-content">
+          <a href="index_de.html" onclick="changeLanguage('de')">Deutsch</a>
+          <a href="index_en.html" onclick="changeLanguage('en')">English</a>
+        </div>
+      </div>
+      
     </div>
   </nav>
 
@@ -33,7 +41,9 @@
     <p>Solution Note</p>    <!-- Farbenanpassung noch zu machen-->
     <p>Die ergebnisorientierte Herangehensweise steigert die Leistung.</p>  <!-- Farbenanpassung noch zu machen-->
     <div class="section-footer">
-        <div class="logo">WOLQE Energy Solutions</div> <!-- Farbenanpassung noch zu machen-->
+      <div class="logo">WOLQE Energy Solutions</div> <!-- Farbenanpassung noch zu machen-->
+      <img src="/Assets/Brand.png" alt="Brand">
+        
     </div>
   </section>
   <section id="Einführung"> 

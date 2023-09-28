@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.465" y2="1.056" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#659dff"/>
+      <stop offset="0.631" stop-color="#34ffe8"/>
+      <stop offset="1" stop-color="aqua"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.24" y1="0.946" x2="0.943" y2="0.228" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#659dff"/>
+      <stop offset="1" stop-color="#01ffff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.763" y1="1" x2="0.093" y2="0.17" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="0.191" y1="0" x2="0.547" y2="1.186" xlink:href="#linear-gradient-2"/>
+    <clipPath id="clip-Wolqe_Logo_White_sRGB">
+      <rect width="1080" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Wolqe_Logo_White_sRGB" clip-path="url(#clip-Wolqe_Logo_White_sRGB)">
+    <g id="_050423_Wolqe_Exploration_Logo_2" data-name="050423_Wolqe_Exploration_Logo_2" transform="translate(199.046 359.495)">
+      <ellipse id="Ellipse_450" data-name="Ellipse 450" cx="180.111" cy="180.505" rx="180.111" ry="180.505" transform="translate(161.775 0)" fill="url(#linear-gradient)"/>
+      <path id="Pfad_2208" data-name="Pfad 2208" d="M720.152,409.1a90.078,90.078,0,0,0-50.477,15.461c-14.732,9.962-25.348,24.837-30.968,41.712A181.023,181.023,0,0,1,466.99,590.049H720.762a90.475,90.475,0,0,0-.61-180.949Z" transform="translate(-128.837 -229.038)" fill="url(#linear-gradient-2)"/>
+      <path id="Pfad_2209" data-name="Pfad 2209" d="M102.073,409.1a90.079,90.079,0,0,1,50.477,15.461c14.732,9.962,25.348,24.837,30.968,41.712A181.024,181.024,0,0,0,355.235,590.049H101.456a90.475,90.475,0,0,1,.609-180.949Z" transform="translate(-11.474 -229.038)" fill="url(#linear-gradient-3)"/>
+      <ellipse id="Ellipse_451" data-name="Ellipse 451" cx="90.474" cy="90.031" rx="90.474" ry="90.031" transform="translate(80.367 90.474)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>
