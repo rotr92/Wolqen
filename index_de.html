@@ -1,197 +1,144 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WOLQE Energy</title>
   <link rel="stylesheet" href="style.css">
   <script src="translations.js"></script>
-
-
 </head>
+
 <body>
-
-  <!-- Page wrapper -->
   <div class="page-wrapper">
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-menu">
-      <a href="#Home"><img class="navbar-logo" src="Assets/Brand.png" alt="Brand-Logo"></a>
-      <a href="#Einführung" class="navbar-item">Einführung</a>
-      <a href="#Lösung" class="navbar-item">WOLQE's Solution</a>
-      <a href="#Paket A" class="navbar-item">Paket A</a>
-      <a href="#Paket B" class="navbar-item">Paket B</a>
-      <a href="#Warum" class="navbar-item">Warum wir?</a>
-      <select id="translations" name="Sprache:" onchange="changeLanguage()">
-        <option value="de">Deutsch</option>
-        <option value="en">Englisch</option>
-      </select>
-      
-    </div>
-  </nav>
-  <div class="page-padding">
-  <!-- Sektionen -->
-  <section id="Home">
-    <h1>Gesamtlösungen für
-        Wohngebäude: Solaranlagen,
-        Energiespeichersysteme und E-
-        Auto-Ladestationen</h1>
-    <p>Solution Note</p>    <!-- Farbenanpassung noch zu machen-->
-    <p>Die ergebnisorientierte Herangehensweise steigert die Leistung.</p>  <!-- Farbenanpassung noch zu machen-->
-    <div class="section-footer">
-      <div class="name">WOLQE <span id="span">Energy</span> Solutions</div> <!-- Farbenanpassung noch zu machen-->
-      <img class= "logo" src="Assets/Brand.png" alt="Brand">
-    </div>
-  </section>
-  <section id="Einführung"> 
-    <h1>Einführung</h1> <!-- Farbenanpassung noch zu machen-->
-    <p>Heute sieht sich der Bereich erneuerbare
-        Energien Forderungen nach größerer Effizienz,
-        Zuverlässigkeit,
-        Wirtschaftlichkeit
-        und
-        Umweltverträglichkeit gegenüber. Sicherheit,
-        Einhaltung von Vorschriften, Zusammenarbeit
-        und die Sicherung kritischer Materialien sind
-        für sein nachhaltiges Wachstum unerlässlich.
-        Mehrere Technologieanbieter bieten unterschiedliche Lösungen an, die
-        Integrationskomplexitäten schaffen und Synergien vermissen lassen. Diese
-        zersplitterte Herangehensweise hindert die effektive Koordination und Kohäsion bei
-        der Verwaltung von erneuerbaren Energiesystemen. Eine stärker vereinheitlichte und
-        integrierte Automatisierungsstrategie ist entscheidend, um den Betrieb von
-        erneuerbaren Energien zu optimieren.
-        Die steigende Akzeptanz von Gesamtlösungen für Wohngebäude, die Solaranlagen,
-        Energiespeicher und E-Auto-Ladestationen umfassen, wird durch Umweltbedenken,
-        Kosteneinsparungen, technologische Fortschritte, staatliche Anreize und das Streben
-        nach Energieunabhängigkeit vorangetrieben. Diese integrierten Systeme bieten
-        Hausbesitzern einen nachhaltigen, wirtschaftlichen und belastbaren Ansatz für die
-        Energieversorgung und den Transport.</p>
-    <h1>Überblick</h1>
-    <p>Die deutsche Regierung erhöht die Förderung erneuerbarer Energielösungen, um
-        ihrem Bekenntnis zur Nachhaltigkeit, zur Stabilität des Stromnetzes, zur
-        technologischen Führung, zum wirtschaftlichen Wachstum und zu globalen
-        Klimazielen gerecht zu werden. Diese Investitionen unterstützen Deutschlands
-        Übergang zu einer nachhaltigeren und widerstandsfähigeren Energie-Welt.
-        Die Erkundung verfügbarer Förderprogramme ist ein kluger Schritt für Hausbesitzer,
-        die Solarsysteme, die Erweiterung der Batteriespeicherung oder die Installation von
-        EV-Ladestrukturen in Betracht ziehen. Diese Programme können finanzielle Anreize
-        bieten, die die Gesamtkosten reduzieren und nachhaltige Energielösungen
-        erschwinglicher und zugänglicher machen.</p>
-
-    <h2>Nationales Förderprogramm - Solarenergie für Elektroautos (442)</h2>
-    <p>Mit dem Zuschussprogramm "Solarenergie für Elektroautos" wird der Kauf und
-        die Installation einer Ladestation für Elektroautos in Verbindung mit einer
-        Photovoltaikanlage und einem Solarstromspeichersystem gefördert.</p>
-    <ul>
-        <li>Einreichungsbeginn ist der 26. September 2023.</li>
-        <li>Die Förderung beträgt bis zu 10.200.- Euro</li>
-        <li>gilt für den Kauf und die Installation von Ladestationen, Photovoltaikanlagen und Solarstromspeichersystemen</li>
-        <li>für Eigentümer von selbstgenutzten Wohngebäuden, die ein Elektroauto besitzen.</li>
-
-    </ul>
-
-    <ul>
-        <h3>Unterstützte Systemkonfiguration</h3>
-        <li>Neue Ladestation mit einer Leistung von >= 11 kW: -600 Euro und 1200 Euro (bidirektional)</li>
-        <li>Neue Photovoltaikanlage mit einer Leistung von >= 5 kWp: 600 Euro pro Kilowatt peak (kWp), maximal 6000 Euro</li>
-        <li>Neues Stromspeichersystem: 250 Euro pro Kilowattstunde (kWh), maximal 3000 Euro</li>
-        <li>Integration des gesamten Systems, einschließlich Installation</li>
-        <li>Energiemanagementsystem (EMS) zur Steuerung des gesamten Systems. <br>
-            Sichern Sie bis zu 9.600 Euro für Ihre Solaranlage und Wallbox mit KfW-Förderung.</li>
-        <p style="font-style: bold">Link: <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Solarstrom-f%C3%BCr-Elektroautos-(442)/">KfW-Förderung</a></p>
-
-    </ul>
-    <div class="section-footer">
-      <div class="name">WOLQE <span id="span">Energy</span> Solutions</div> <!-- Farbenanpassung noch zu machen-->
-      <img class= "logo" src="Assets/Brand.png" alt="Brand">
-    </div>
-  </section>
-  <section id="Lösung">
-    <h1>WOLQE's Solution</h1> <!-- Farbenanpassung noch zu machen-->
-    <p>Der Schwerpunkt von WOLQE liegt darauf, Hausbesitzern und Betreibern dabei zu helfen, das Beste aus neuen, intelligenteren Energietechnologien und
-      Energiespeichersystemen herauszuholen und sie auf bewährte Verfahren für das Energiemanagement zu lenken, einschließlich:</p>
-      <ul>
-        <li>Effizienzoptimierung:
-            WOLQE unterstützt bei der Optimierung von
-           Energiesystemen, um die Effizienz zu maximieren und sicherzustellen, dass die
-             Energieerzeugung, -speicherung und -verbrauch so ressourceneffizient wie möglich sind.
-        </li>
-        <li>Lastmanagement: Sie helfen Nutzern dabei, ihre Energielasten effizient zu
-            verwalten, indem sie Energieverschwendung und Kosten durch Lastausgleich und Spitzenlastmanagement reduzieren.
-        </li>
-        <li>Energieeinsparung: WOLQE fördert energieeinsparende Praktiken und ermutigt
-            Nutzer dazu, unnötigen Energieverbrauch zu reduzieren und energieeffizient Maßnahmen zu ergreifen.
-        </li>
-        <li>Integration erneuerbarer Energien: Sie unterstützen Nutzer dabei, erneuerbare
-            Energiequellen wie Solarenergie in ihre Energieversorgung zu integrieren, um die
-            Abhängigkeit von fossilen Brennstoffen zu verringern und die CO2-Emissionen zu
-            reduzieren.
-        </li>
-        <li>Energiespeicher: WOLQE berät zur Installation und Verwaltung von
-            Energiespeichersystemen und optimiert die Nutzung gespeicherter Energie
-            während Spitzenlastzeiten oder Stromausfällen.
-        </li>
-    <div class="section-footer">
-      <div class="name">WOLQE <span id="span">Energy</span> Solutions</div> <!-- Farbenanpassung noch zu machen-->
-      <img class= "logo" src="Assets/Brand.png" alt="Brand">
-    </div>
-  </section>
-  <section id="Paket A">
-    <h1>Paket A</h1>
-    <p>Inhalt des Paket A</p>
-    <div class="section-footer">
-      <div class="name">WOLQE <span id="span">Energy</span> Solutions</div> <!-- Farbenanpassung noch zu machen-->
-      <img class= "logo" src="Assets/Brand.png" alt="Brand">
-    </div>
-  </section>
-  <section id="Paket B">
-    <h1>Paket B</h1>
-    <p>Inhalt des Paket B</p>
-    <div class="section-footer">
-      <div class="name">WOLQE <span id="span">Energy</span> Solutions</div> <!-- Farbenanpassung noch zu machen-->
-      <img class= "logo" src="Assets/Brand.png" alt="Brand">
-    </div>
-  </section>
-  <section id="Warum">
-    <h1>Why WOLQE?</h1>
-    <p>Wählen Sie WOLQE für Ihre Energielösungen, denn bei uns finden Sie
-        bewährte Expertise in datengetriebenen Erkenntnissen, hochmoderner
-        Technologie und maßgeschneiderten Dienstleistungen, die speziell auf Ihre
-        Bedürfnisse zugeschnitten sind. Dank unserer umfassenden Edge-to-
-        Cloud-Strategie helfen wir erneuerbaren Energieerzeugern dabei, ihre
-        Leistungs- und Nachhaltigkeitsziele mühelos zu erreichen. Unsere
-        vertraglichen Garantien, gestützt auf zuverlässige Datenstrategien,
-        gewährleisten eine optimierte Nutzung Ihrer Anlagen, geringere
-        Betriebskosten, eine gesteigerte Effizienz Ihrer Arbeitskräfte sowie erhöhte
-        Sicherheit und Einhaltung von Vorschriften. Vertrauen Sie auf WOLQE und
-        gestalten Sie gemeinsam mit uns eine intelligentere und effizientere
-        Energiezukunft.</p>
-        <div class="section-footer">
-          <div class="name">WOLQE <span id="span">Energy</span> Solutions</div> <!-- Farbenanpassung noch zu machen-->
-          <img class= "logo" src="Assets/Brand.png" alt="Brand">
+    <div class="page-padding">
+      <nav class="navbar">
+        <div class="navbar-menu">
+          <a href="#Intro"><img class="navbar-logo" src="Assets/Brand.png" alt="Brand-Logo"></a>
+          <a href="#Einführung" class="navbar-item">Einführung</a>
+          <a href="#Lösung" class="navbar-item">WOLQE's Solution</a>
+          <a href="#Paket A" class="navbar-item">Paket A</a>
+          <a href="#Paket B" class="navbar-item">Paket B</a>
+          <a href="#Warum" class="navbar-item">Warum wir?</a>
+          <select id="translations" name="Sprache:" onchange="changeLanguage()">
+            <option value="de">Deutsch</option>
+            <option value="en">Englisch</option>
+          </select>
         </div>
-  </section>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div>
-        <img class= footerlogo src="Assets/Brand.png" alt="Logo">
+      </nav>
+      <section id="Intro">
+        <h1>Gesamtlösungen für Wohngebäude:</h1>
+        <h2>Solaranlagen, Energiespeichersystemen & E-Auto-Ladestationen</h2>
+        <h3>Solution Note</h3>
+        <h3>Die ergebnisorientierte Herangehensweise steigert Leistung</h3>
+        <div class="section-footer">
+          <div class="info">
+            <h4>WOLQE <span id="span">Energy</span> Solutions</h4>
+          </div>
+          <div class ="logo-container"><img class="logo" src="Assets/Brand.png" alt="Brand"></div>
+        </div>
+      </section>
+      <section id="Einführung">
+        <!-- (Hier kommt der Inhalt für Einführung) -->
+        <!-- <img src="" alt="Pic-E-Car">  --> <!-- Einfügen des Bildes in die rechte obere Ecke + Styling-->
+        <h1>Einführung</h1>
+        <p>Heute sieht sich der Bereich erneuerbare
+          Energien Forderungen nach größerer Effizienz,
+          Zuverlässigkeit,
+          Wirtschaftlichkeit
+          und
+          Umweltverträglichkeit gegenüber. Sicherheit,
+          Einhaltung von Vorschriften, Zusammenarbeit
+          und die Sicherung kritischer Materialien sind
+          für sein nachhaltiges Wachstum unerlässlich.
+          Mehrere Technologieanbieter bieten unterschiedliche Lösungen an, die
+          Integrationskomplexitäten schaffen und Synergien vermissen lassen. Diese
+          zersplitterte Herangehensweise hindert die effektive Koordination und Kohäsion bei
+          der Verwaltung von erneuerbaren Energiesystemen. Eine stärker vereinheitlichte und
+          integrierte Automatisierungsstrategie ist entscheidend, um den Betrieb von
+          erneuerbaren Energien zu optimieren.
+          Die steigende Akzeptanz von Gesamtlösungen für Wohngebäude, die Solaranlagen,
+          Energiespeicher und E-Auto-Ladestationen umfassen, wird durch Umweltbedenken,
+          Kosteneinsparungen, technologische Fortschritte, staatliche Anreize und das Streben
+          nach Energieunabhängigkeit vorangetrieben. Diese integrierten Systeme bieten
+          Hausbesitzern einen nachhaltigen, wirtschaftlichen und belastbaren Ansatz für die
+          Energieversorgung und den Transport.</p>
+      <h1>Überblick</h1>
+      <p>Die deutsche Regierung erhöht die Förderung erneuerbarer Energielösungen, um
+          ihrem Bekenntnis zur Nachhaltigkeit, zur Stabilität des Stromnetzes, zur
+          technologischen Führung, zum wirtschaftlichen Wachstum und zu globalen
+          Klimazielen gerecht zu werden. Diese Investitionen unterstützen Deutschlands
+          Übergang zu einer nachhaltigeren und widerstandsfähigeren Energie-Welt.
+          Die Erkundung verfügbarer Förderprogramme ist ein kluger Schritt für Hausbesitzer,
+          die Solarsysteme, die Erweiterung der Batteriespeicherung oder die Installation von
+          EV-Ladestrukturen in Betracht ziehen. Diese Programme können finanzielle Anreize
+          bieten, die die Gesamtkosten reduzieren und nachhaltige Energielösungen
+          erschwinglicher und zugänglicher machen.</p>
+      <div class="section-footer">
+        <div class="info">
+          <h4>WOLQE <span id="span">Energy</span> Solutions</h4>
+        </div>
       </div>
-      <div class="email">
-        <p>info@wolqe.co</p>
-      </div>
-      <div class="footer-links">
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-        <a href="mailto:info@wolqe.co">Kontakt</a>
+  
+      <h2>Nationales Förderprogramm - Solarenergie für Elektroautos (442)</h2>
+      <p>Mit dem Zuschussprogramm "Solarenergie für Elektroautos" wird der Kauf und
+          die Installation einer Ladestation für Elektroautos in Verbindung mit einer
+          Photovoltaikanlage und einem Solarstromspeichersystem gefördert.</p>
+      <ul>
+          <li>Einreichungsbeginn ist der 26. September 2023.</li>
+          <li>Die Förderung beträgt bis zu 10.200.- Euro</li>
+          <li>gilt für den Kauf und die Installation von Ladestationen, Photovoltaikanlagen und Solarstromspeichersystemen</li>
+          <li>für Eigentümer von selbstgenutzten Wohngebäuden, die ein Elektroauto besitzen.</li>
+     </ul>
+  
+      <ul>
+          <h3>Unterstützte Systemkonfiguration</h3>
+          <li>Neue Ladestation mit einer Leistung von >= 11 kW: -600 Euro und 1200 Euro (bidirektional)</li>
+          <li>Neue Photovoltaikanlage mit einer Leistung von >= 5 kWp: 600 Euro pro Kilowatt peak (kWp), maximal 6000 Euro</li>
+          <li>Neues Stromspeichersystem: 250 Euro pro Kilowattstunde (kWh), maximal 3000 Euro</li>
+          <li>Integration des gesamten Systems, einschließlich Installation</li>
+          <li>Energiemanagementsystem (EMS) zur Steuerung des gesamten Systems. <br>
+              Sichern Sie bis zu 9.600 Euro für Ihre Solaranlage und Wallbox mit KfW-Förderung.</li>
+          <p style="font-style: bold">Link: <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Solarstrom-f%C3%BCr-Elektroautos-(442)/">KfW-Förderung</a></p>
+      </ul>
+      <div class="section-footer">
+        <div class="info">
+          <h4>WOLQE <span id="span">Energy</span> Solutions</h4>
+        </div>
       </div>
 
-  </footer>
+      </section>
+      <section id="Lösung">
+        <!-- (Hier kommt der Inhalt für Lösung) -->
+      </section>
+      <section id="Paket A">
+        <!-- (Hier kommt der Inhalt für Paket A) -->
+      </section>
+      <section id="Paket B">
+        <!-- (Hier kommt der Inhalt für Paket B) -->
+      </section>
+      <section id="Warum">
+        <!-- (Hier kommt der Inhalt für Warum) -->
+      </section>
+    </div>
 
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <img class="footerlogo" src="Assets/Brand.png" alt="Logo">
+        </div>
+        <div class="email">
+          <p>info@wolqe.co</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="mailto:info@wolqe.co">Kontakt</a>
+        </div>
+      </div>
+    </footer>
   </div>
 
 </body>
+
 </html>
