@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WOLQE Energy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style 2.css">
-  <script src="functions.js"></script>
 </head>
 
 <body>
@@ -14,32 +14,32 @@
     <div class="page-padding">
       <nav class="navbar">
         <div class="navbar-logo">
-          <a href="#Intro"><img src="Assets/Brand.png" alt="Brand-Logo"></a>
+          <a href="#Top"><img src="Assets/Brand.png" alt="Brand-Logo"></a>
         </div>
         <div class="burger-menu">
           <div class="bar"></div>
           <div class="bar"></div>
-          <div class="bar"></div><!--Anpassung Verhalten im Media Query-->
+          <div class="bar"></div>
         </div>
         <div class="navbar-menu">
           <a href="#Einführung" class="navbar-item">Einführung</a>
           <a href="#Förderung" class="navbar-item">Förderung</a>
           <a href="#Lösung" class="navbar-item">WOLQE's Solution</a>
-          <a href="#Paket A" class="navbar-item">Paket A</a>
-          <a href="#Paket B" class="navbar-item">Paket B</a>
+          <a href="#PaketA" class="navbar-item">Paket A</a>
+          <a href="#PaketB" class="navbar-item">Paket B</a>
           <a href="#Warum" class="navbar-item">Warum wir?</a>
-          <!-- <select id="translations" name="Sprache:" onchange="changeLanguage()">
+          <!-- <select id="translations" onchange="changeLanguage()">
             <option value="de">Deutsch</option>
             <option value="en">Englisch</option>
           </select> -->
         </div>
       </nav>
        
-      <section id="Intro"><!--Einführung Clouds.png + Anpassung-->
-        <h1>Gesamtlösungen<br>für Wohngebäude:</h1>
+      <section id="Top"><!--Einführung Clouds.png + Anpassung-->
+        <h1>Gesamtlösungen für Wohngebäude:</h1>
         <h2>Solaranlagen<br>Energiespeichersystemen & <br>E-Auto-Ladestationen</h2>
-        <h3>Solution Note</h3>
-        <h3>Die ergebnisorientierte Herangehensweise steigert Leistung</h3>
+        <h3><span id="span">Solution Note</span></h3>
+        <h3>Die ergebnisorientierte Herangehensweise steigert Leistung</h3>       
         <div class="section-footer">
           <div class="info">
             <h4>WOLQE <span id="span">Energy</span> Solutions</h4>
@@ -49,18 +49,23 @@
       </section>
       <section id="Einführung">
         <!-- (Hier kommt der Inhalt für Einführung) -->
-        <!-- <img src="" alt="Pic-E-Car">  --> <!-- Einfügen des Bildes in die rechte obere Ecke + Styling-->
-        <h1>Einführung</h1>
-        <p>Heute sieht sich der Bereich erneuerbare
-          Energien Forderungen nach größerer Effizienz,
-          Zuverlässigkeit,
-          Wirtschaftlichkeit
-          und
-          Umweltverträglichkeit gegenüber. Sicherheit,
-          Einhaltung von Vorschriften, Zusammenarbeit
-          und die Sicherung kritischer Materialien sind
-          für sein nachhaltiges Wachstum unerlässlich.
-          Mehrere Technologieanbieter bieten unterschiedliche Lösungen an, die
+        <div class="flex-container">
+          <h1>Einführung</h1>
+          <div class="flex-item">
+           
+            <p id="p1">Heute sieht sich der Bereich erneuerbare
+            Energien Forderungen nach größerer Effizienz,
+            Zuverlässigkeit,
+            Wirtschaftlichkeit
+            und
+            Umweltverträglichkeit gegenüber. Sicherheit,
+            Einhaltung von Vorschriften, Zusammenarbeit
+            und die Sicherung kritischer Materialien sind
+            für sein nachhaltiges Wachstum unerlässlich.</p>
+            <!-- <img id="intro-car" src="Assets/Auto.png" alt="Bild-E-Auto"> -->
+          </div>
+        </div>
+          <p>Mehrere Technologieanbieter bieten unterschiedliche Lösungen an, die
           Integrationskomplexitäten schaffen und Synergien vermissen lassen. Diese
           zersplitterte Herangehensweise hindert die effektive Koordination und Kohäsion bei
           der Verwaltung von erneuerbaren Energiesystemen. Eine stärker vereinheitlichte und
@@ -72,7 +77,7 @@
           nach Energieunabhängigkeit vorangetrieben. Diese integrierten Systeme bieten
           Hausbesitzern einen nachhaltigen, wirtschaftlichen und belastbaren Ansatz für die
           Energieversorgung und den Transport.</p>
-        <h1>Überblick</h1>
+        <h1 id="split">Überblick</h1>
         <p>Die deutsche Regierung erhöht die Förderung erneuerbarer Energielösungen, um
           ihrem Bekenntnis zur Nachhaltigkeit, zur Stabilität des Stromnetzes, zur
           technologischen Führung, zum wirtschaftlichen Wachstum und zu globalen
@@ -90,29 +95,31 @@
         </div>
       </section>
       <section id="Förderung">
-        <h2>Nationales Förderprogramm - Solarenergie für Elektroautos (442)</h2>
+        <h1>Nationales Förderprogramm - Solarenergie für Elektroautos (442)</h1>
         <p>Mit dem Zuschussprogramm "Solarenergie für Elektroautos" wird der Kauf und
             die Installation einer Ladestation für Elektroautos in Verbindung mit einer
             Photovoltaikanlage und einem Solarstromspeichersystem gefördert.</p>
-            <div > 
-              <ul id="box-r">
-                <li>Einreichungsbeginn ist der 26. September 2023.</li>
-                <li>Die Förderung beträgt bis zu 10.200.- Euro</li>
-                <li>gilt für den Kauf und die Installation von Ladestationen, Photovoltaikanlagen und Solarstromspeichersystemen</li>
-                <li>für Eigentümer von selbstgenutzten Wohngebäuden, die ein Elektroauto besitzen.</li>
-              </ul>
-            </div>
-            <div>
-              <ul id="box-l"><!--Hier kommt noch das Auto on Top-->
-                <h3>Unterstützte Systemkonfiguration</h3>
-                <li>Neue Ladestation mit einer Leistung<br>von >= 11 kW: 600 Euro und 1200 Euro (bidirektional)</li>
-                <li>Neue Photovoltaikanlage mit einer Leistung<br>von >= 5 kWp: 600 Euro pro Kilowatt peak (kWp), maximal 6000 Euro</li>
-                <li>Neues Stromspeichersystem: 250 Euro pro Kilowattstunde (kWh), maximal 3000 Euro</li>
-                <li>Integration des gesamten Systems,<br>einschließlich Installation</li>
-                <li>Energiemanagementsystem (EMS) <br>zur Steuerung des gesamten Systems. <br>
+            <div class="box-container"> 
+              <div id="box-l">
+                <ul>
+                  <li>Einreichungsbeginn ist der 26. September 2023.</li>
+                  <li>Die Förderung beträgt bis zu 10.200.- Euro</li>
+                  <li>gilt für den Kauf und die Installation von Ladestationen, Photovoltaikanlagen und Solarstromspeichersystemen</li>
+                  <li>für Eigentümer von selbstgenutzten Wohngebäuden, die ein Elektroauto besitzen.</li>
+                </ul>
+              </div>
+              <div id="box-l">
+                <ul>
+                  <h3>Unterstützte Systemkonfiguration</h3>
+                  <li>Neue Ladestation mit einer Leistung<br>von >= 11 kW: 600 Euro und 1200 Euro (bidirektional)</li>
+                  <li>Neue Photovoltaikanlage mit einer Leistung<br>von >= 5 kWp: 600 Euro pro Kilowatt peak (kWp), maximal 6000 Euro</li>
+                  <li>Neues Stromspeichersystem: 250 Euro pro Kilowattstunde (kWh), maximal 3000 Euro</li>
+                  <li>Integration des gesamten Systems,<br>einschließlich Installation</li>
+                  <li>Energiemanagementsystem (EMS) <br>zur Steuerung des gesamten Systems. <br>
                     Sichern Sie bis zu 9.600 Euro für Ihre Solaranlage und Wallbox mit KfW-Förderung.</li>
-                <p style="font-style: bold">Link: <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Solarstrom-f%C3%BCr-Elektroautos-(442)/">KfW-Förderung</a></p>
-              </ul>
+                  <p style="font-style: bold">Link: <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Solarstrom-f%C3%BCr-Elektroautos-(442)/">KfW-Förderung</a></p>
+                </ul>
+              </div>
             </div>
       <div class="section-footer">
         <div class="info">
@@ -146,8 +153,9 @@
             Energiespeichersystemen und optimiert die Nutzung gespeicherter Energie
             während Spitzenlastzeiten oder Stromausfällen.</li>
           </ul>
-          <!--Bilder einfügen-->
-
+          <div class="Zoom">
+            <img id="Diagramm" src="Assets/Diagramm.png" alt="Diagramm">
+          </div>
           <p>Unser Gesamtangebot im Rahmen dieser Lösung umfasste:</p>
             <ul>
               <li><span id="span">PV-Solaranlage</span></li>
@@ -160,118 +168,136 @@
             Elektrofahrzeug-Ladegeräte, ein Energiemanagementsystem (App) und mehr.<br>
             Je nach spezifischen Anforderungen können unterschiedliche Konfigurationen
             eingesetzt werden, und bestimmte Komponenten können je nach tatsächlichen
-            Gegebenheiten angepasst oder weggelassen werden.<br>
+            Gegebenheiten angepasst oder weggelassen werden.
+            <br>
             Das Diagramm zeigt die typische Gesamtlösung für den Wohngebrauch im
             Rahmen dieses Förderprogramms.</p> 
 
       </section>
-      <section id="Paket A">
-        <!-- (Hier kommt der Inhalt für Paket A) -->
-        <h1>Paket A</h1>
-        <div class="product">
-          <div class="product-image">
-            <img src="" alt="Produkt 1">
+      <section id="PaketA">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Starcharge - Paket A
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="Assets/Vesta.png" alt="Produkt 1">
+                  </div>
+                  <div class="product-info">
+                    <h2>Vesta Series Inverter</h2><br>
+                    <p>Der Vesta ist das Schlüsselgerät
+                      für das intelligente Zuhause. Er
+                      verwaltet den Energiefluss des
+                      Netzes, der Solarmodule, des
+                      Elektroauto-Ladegeräts (AC-Typ)
+                      und des Batteriespeichersystems
+                      in einem einzigen Gerät.</p>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-info">
+                    <h2>vBox Smart Energy Storage Systems</h2><br>
+                    <p>Die vBox ist ein Energiespeichersystem,
+                      das speziell für das intelligente Zuhause
+                      entwickelt wurde. Sie ist modular
+                      aufgebaut und ermöglicht die Auswahl
+                      der Batteriekapazität nach den
+                      Anforderungen der Kunden. Mit diesem
+                      Gerät kann Energie aus dem Netz oder
+                      den PV-Modulen gespeichert und zu
+                      jeder Zeit für alle Anwendungen im
+                      Innenbereich bereitgestellt werden.</p>
+                  </div>
+                  <div class="product-image">
+                    <img src="Assets/VBox.png" alt="Produkt 2">
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <img src="Assets/Aurora.png" alt="Produkt 3">
+                  </div>
+                  <div class="product-info">
+                    <h2>Aurora Series</h2><br>
+                    <p>Aurora ist das neueste AC-Elektrofahrzeuglade-
+                      Gerät von Starcharge. Es ermöglicht das
+                      bequeme Aufladen Ihres Elektrofahrzeugs
+                      jederzeit. Dieses Produkt eignet sich perfekt für
+                      das Laden zu Hause. Die Aurora-Serie bietet
+                      Konfigurationen mit 7 kW, 11 kW und 22 kW, je
+                      nach den Anforderungen des Kunden.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="product-info">
-            <p>Der Vesta ist das Schlüsselgerät
-              für das intelligente Zuhause. Er
-              verwaltet den Energiefluss des
-              Netzes, der Solarmodule, des
-              Elektroauto-Ladegeräts (AC-Typ)
-              und des Batteriespeichersystems
-              in einem einzigen Gerät.</p>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Paket B - SAJ
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="Assets/HS2.png" alt="Produkt 4">
+                  </div>
+                  <div class="product-info">
+                    <h2>HS2 Series</h2>
+                    <ul><li>Einfache Einstellung des intelligenten Modus</li>
+                      <li>AFCI</li>
+                      <li>DC 15A& String abgetimmt auf PV/Module
+                      mit ultrahoher Leistung</li>
+                      <li>Schnelles Laden/Entladen des
+                      Batteriespeichers wird unterstützt</li>
+                      <li>150% mehr PV-Leistung</li>
+                      <li>100% Unterstützung von dreiphasiger</li>
+                      <li>Spannungsasymmetrie</li>
+                      <li>Mit USV-Funktion Schltzeit <= 10 ms</li>
+                      <li>110% höhere Ausgagsleistung</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-info">
+                    <h2>EV-Ladegerät</h2>
+                    <ul>
+                      <li>Einfache Installation</li>
+                      <li>IP65-Schutz (wasserdichtes Design)</li>
+                      <li>Unterstützt das TT-/TN-/IT-Versorgungsnetz</li>
+                      <li>Mehrere integrierte Schutzvorrichtungen zur
+                      Gewährleistung der Energiesicherheit</li>
+                    </ul>
+                  </div>
+                  <div class="product-image">
+                    <img src="Assets/EV.png" alt="Produkt 5">
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <img src="Assets/B2.png" alt="Produkt 6">
+                  </div>
+                  <div class="product-info">
+                    <h2>B2-Series Niederspannungsbatterie</h2>
+                    <ul>
+                      <li>Wandmontage oder Bodenmontage</li>
+                      <li>Modularer Aufbau skalierbar bis zu 40 kWh</li>
+                      <li>Sichere und zuverlässige LiFePO4-Batterien</li>
+                      <li>Unterstützt 1C Lade und Entladerate</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="product">
-          <div class="product-info">
-            <p>Die vBox ist ein Energiespeichersystem,
-              das speziell für das intelligente Zuhause
-              entwickelt wurde. Sie ist modular
-              aufgebaut und ermöglicht die Auswahl
-              der
-              Batteriekapazität
-              nach
-              den
-              Anforderungen der Kunden. Mit diesem
-              Gerät kann Energie aus dem Netz oder
-              den PV-Modulen gespeichert und zu
-              jeder Zeit für alle Anwendungen im
-              Innenbereich bereitgestellt werden.</p>
-          </div>
-          <div class="product-image">
-            <img src="bild2.jpg" alt="Produkt 2">
-          </div>
-        </div>
-        
-        <div class="product">
-          <div class="product-image">
-            <img src="bild3.jpg" alt="Produkt 3">
-          </div>
-          <div class="product-info">
-            <p>Aurora ist das neueste AC-Elektrofahrzeuglade-
-              Gerät von Starcharge. Es ermöglicht das
-              bequeme Aufladen Ihres Elektrofahrzeugs
-              jederzeit. Dieses Produkt eignet sich perfekt für
-              das Laden zu Hause. Die Aurora-Serie bietet
-              Konfigurationen mit 7 kW, 11 kW und 22 kW, je
-              nach den Anforderungen des Kunden.</p>
-          </div>
-        </div>
-        
-  
+      </section>
 
-      </section>
-      <section id="Paket B">
-        <!-- (Hier kommt der Inhalt für Paket B) -->
-        <h1>Paket B</h1>
-        <div class="product">
-          <div class="product-image">
-            <img src="bild4.jpg" alt="Produkt 4">
-          </div>
-          <div class="product-info">
-            <p>✓ Einfache Einstellung des intelligenten Modus
-              ✓ AFCI
-              ✓ DC 15A& String abgetimmt auf PV/Module
-              mit ultrahoher Leistung
-              ✓ Schnelles Laden/Entladen des
-              Batteriespeichers wird unterstützt
-              ✓ 150% mehr PV-Leistung
-              ✓ 100% Unterstützung von dreiphasiger
-              ✓ Spannungsasymmetrie
-              ✓ Mit USV-Funktion Schltzeit <= 10 ms
-              ✓ 110% höhere Ausgagsleistung</p>
-          </div>
-        </div>
-        
-        <div class="product">
-          <div class="product-info">
-            <p>✓ Einfache Installation
-              ✓ IP65-Schutz (wasserdichtes Design)
-              ✓ Unterstützt das TT-/TN-/IT-Versorgungsnetz
-              ✓ Mehrere integrierte Schutzvorrichtungen zur
-              Gewährleistung der Energiesicherheit</p>
-          </div>
-          <div class="product-image">
-            <img src="bild5.jpg" alt="Produkt 5">
-          </div>
-        </div>
-        
-        <div class="product">
-          <div class="product-image">
-            <img src="bild6.jpg" alt="Produkt 6">
-          </div>
-          <div class="product-info">
-            <p>✓ Wandmontage oder Bodenmontage
-              ✓ Modularer Aufbau skalierbar bis zu
-              40 kWh
-              ✓ Sichere und zuverlässige LiFePO4-
-              Batterien
-              ✓ Unterstützt 1C Lade und Entladerate</p>
-          </div>
-        </div>
-        
-      </section>
       <section id="Warum">
         <!-- (Hier kommt der Inhalt für Warum) -->
         <h1>Why WOLQE?</h1>
@@ -287,6 +313,20 @@
           Sicherheit und Einhaltung von Vorschriften. Vertrauen Sie auf WOLQE und
           gestalten Sie gemeinsam mit uns eine intelligentere und effizientere
           Energiezukunft.</p>
+
+          <h1>Für weitere Informationen</h1>
+          <p>Um mehr darüber zu erfahren, wie die Energielösungen von<br>
+          WOLQE Ihnen helfen können, besuchen Sie <a href="https://wolqe.co">unsere Webseite</a>,<br>
+          oder kontaktieren Sie unseren Vertriebsleiter:<br>
+          <br>
+          Herr Vadim Glushan<br>
+          <a href="mailto:v.glushan@wolqe.co">v.glushan@wolqe.co</a><br>
+          <a href="tel:+49 0176 2432 0271">+49 0176 2432 0271</a><br>
+          WOLQE<br><br>
+
+          Zeppelinallee 15<br>
+          60325 Frankfurt a. M.
+        </p>
       </section>
     </div>
 
@@ -299,14 +339,15 @@
           <p>info@wolqe.co</p>
         </div>
         <div class="footer-links">
-          <a href="#">Impressum</a>
-          <a href="#">Datenschutz</a>
+          <a href="https://www.wolqe.co/impressum">Impressum</a>
+          <a href="https://www.wolqe.co/datenschutz">Datenschutz</a>
           <a href="mailto:info@wolqe.co">Kontakt</a>
         </div>
       </div>
     </footer>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="functions.js"></script>
 </body>
 
 </html>
