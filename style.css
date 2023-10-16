@@ -83,14 +83,13 @@ body {
 
 
 /* Navbar */
-.navbar {
+.navibar {
   z-index: 10;
   max-width: 1180px;
   width: 90%;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0;
-  padding-right: 0;
+  padding:15px;
   display: flex;
   position: fixed;
   top: 5%;
@@ -100,40 +99,41 @@ body {
   border-radius: 10px;
   border: solid #fff 2px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
 }
 
-.navbar-logo img {
+.navibar-logo img {
   margin-top: 10px;
   margin-left: 10px;
-  max-width: 300px;
+  max-width: 190px;
   max-height: 100px;
 }
 
-.burger-menu {
+.navi-mobile {
   display: none;
 }
 
-.burger-menu .bar {
+.navi-mobile .bar {
   height: 3px;
   width: 25px;
   background-color: #fff;
   margin: 2px auto;
 }
 
-.navbar-menu {
+.navibar-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-item {
+.navibar-item {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
 
-.navbar-item:hover {
+.navibar-item:hover {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
@@ -141,7 +141,7 @@ body {
 }
 /* Navbar-Mobile */
 @media screen and (max-width: 961px) {
-  .navbar {
+  .navibar {
     top: 1vh;
     justify-content: space-between;
     width: 80%;
@@ -151,25 +151,25 @@ body {
     background: none;
     box-shadow: none;
     z-index: 1;
+    padding-left: 0;
   }
 
 
-  .navbar-menu {
+  .navibar-menu {
     display: none;
   }
 
-  .burger-menu {
+  .navi-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 10px;
     right: 10px;
     z-index: 10;
 
   }
 
-  .burger-menu .bar {
+  .navi-mobile .bar {
     height: 3px;
     width: 20px;
     background-color: #fff;
@@ -179,7 +179,7 @@ body {
 
   }
 
-  .navbar-menu.active {
+  .navibar-menu.active {
     display: flex;
     flex-direction: column;
     top: 5%;
@@ -188,44 +188,42 @@ body {
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
     border-radius: 10px;
-    padding-top: 2rem;
+    padding-top: 3rem;
     border: 1px solid #fff;
     backdrop-filter: blur(20px);
     justify-items: right;
-    margin-left: -20px;
     padding-right: 40px;
   }
 
-  .navbar::after {
+  .navibar::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     border-bottom: 1px solid #fff;
     z-index: 10;
   }
-  .navbar-menu.active .navbar-item {
+  .navibar-menu.active .navibar-item {
     margin: 8px 0;
     text-align: center;
   }
 
-  .navbar-logo img {
+  .navibar-logo img {
     position: relative;
     margin-top: 10px;
     margin-left: 10px;
-    max-width: 100%; /* Das Logo wird die volle Breite des verfügbaren Platzes einnehmen */
-    max-height: 80px; /* Eine maximale Höhe für das Logo setzen */
+    max-width: 40%; /* Das Logo wird die volle Breite des verfügbaren Platzes einnehmen */
+    max-height: 50px; /* Eine maximale Höhe für das Logo setzen */
     z-index: 10;
   }
-  .navbar-item {
+  .navibar-item {
     padding: 8px 12px;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
   }
-  .navbar-item:hover {
+  .navibar-item:hover {
     padding: 8px 12px;
     font-size: 16px;
     font-weight: 500;
@@ -247,29 +245,11 @@ body {
   padding-left: 10vw;
 }
 
-/* Media */
-@media screen and (max-width: 961px) {
-  section {
-    min-height: 80vh;
-    padding-top: 12%;
-    max-width: 90%;
-  }
-  section#Top {
-    padding-top: 30px;
-  }
-
-  .page-wrapper .page-padding{
-    padding-top: 32px;
-    padding-right: 0;
-    padding-bottom: 20px;
-    padding-left: 10vw;
-  }
-}
 /* Sections */
 section {
   min-height: 100vh;
   position: relative;
-  padding-top: 8%;
+  padding-top: 10%;
   padding-bottom: 10%;
   max-width: 85%;
 }
@@ -290,26 +270,42 @@ section#Top {
   section#Top h3,
   section#Top h4 {
     text-align: left;
+    margin-top: 2.5em;
   }
-
+  section#Warum h1:nth-of-type(even){
+    text-align: left;
+  }
   section#PaketA {
-    padding-top:0;
-
-    /* background-color: #fff; */
+    padding-top:20%;
   }
-  section#PaketA h1{
-
-    color:#4c6ca2;
-  }
+ 
   section#Lösung {
     padding-bottom:50px;
   }
-  /* section#PaketB {
-    background-color: #fff;
-  } */
-  section#PaketB h1{
-    color:#4c6ca2;
+
+  /* Media */
+@media screen and (max-width: 961px) {
+  section {
+    min-height: 80vh;
+    padding-top: 20%;
+    max-width: 90%;
   }
+  section#Top {
+    padding-top: 30px;
+  }
+  section#Top h3:last-child{
+    margin-bottom:5%;
+  }
+
+  .page-wrapper .page-padding{
+    padding-top: 32px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 10vw;
+  }
+}
+
+
 
   .Zoom {
     display: flex;
@@ -385,12 +381,15 @@ section#Top {
 
 @media screen and (max-width: 961px) {
   .logo {
-    max-width: 250px;
+    max-width: 150px;
     max-height: 100px;
   }
   .logo-container {
     order: 2;
     align-self: center;
+  }
+  .info h4 {
+    font-size: 16px;
   }
 }
 
@@ -435,7 +434,7 @@ ul li::before {
 }
 
 #box-r, #box-l {
-  background-color: rgba(19, 78, 240, 0.5);
+  background-color: rgba(51, 162, 236, 0.5);
   border-radius: 10px;
   width: 45%;
   margin: 10px;
@@ -484,37 +483,53 @@ footer {
   margin: 0 16px 5vh;
 }
 
+.footer-container {
+  position: relative;
+  margin-top: 5%;
+}
 
-.section-footer {
+.sektion-footer {
+  position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
   display: flex;
-  align-items: right;
+  align-items: flex-end;
   flex-direction: column;
-  font-size: 2em;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  margin-top: 2vh;
 }
 
 @media screen and (max-width: 961px) {
-  .section-footer {
-    bottom: 0;
-    right: 0;
+  .sektion-footer {
+    position: relative;
+    bottom: auto;
+    right: auto;
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 3vw;
+    margin-bottom: 5vh;
   }
 }
-.section-footer h4 {
+
+.sektion-footer h4 {
   text-align: right;
 }
-
 
 .logo-container {
   order: 2;
 }
+.footer-container {
+  margin-top: 20px; /* Ändere den Wert nach Bedarf */
+  margin-bottom:2vh;
+}
+
+
+
+
 
 .product {
   display: flex;
@@ -522,10 +537,10 @@ footer {
 }
 
 .product-image img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   object-fit: contain;
-  max-height: 100%;
+  max-height: 80%;
 }
 
 .product-info {
